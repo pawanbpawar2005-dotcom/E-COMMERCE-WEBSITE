@@ -1,0 +1,13 @@
+[build]
+  command = "echo Static site already prepared in dist"
+  publish = "dist"
+
+  [build.environment]
+    NODE_VERSION = "20"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[dev]
+  framework = "#static"
